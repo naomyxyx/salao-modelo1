@@ -30,4 +30,8 @@ Rupi/
 ├── fotos/
 ├── index.html
 ├── style.css
+<<<<<<< HEAD
 └── README.md
+=======
+└── README.md
+>>>>>>> ee5f7e5 (Ajuste mobile fotos)
