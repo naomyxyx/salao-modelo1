@@ -580,7 +580,7 @@ footer{
         gap:16px;
         overflow-x:auto;
         padding:12px 20px 28px;
-        scroll-snap-type: none;
+     /* scroll-snap-type: none */
         -webkit-overflow-scrolling:touch;
         scrollbar-width:none;
         width:100%;
@@ -597,7 +597,7 @@ footer{
         margin:0;
         overflow:hidden;
         border-radius:24px;
-        scroll-snap-align:center;
+        /* scroll-snap-align:center; */
         box-shadow:0 10px 25px rgba(0,0,0,.15);
 
         transform:translateZ(0);
