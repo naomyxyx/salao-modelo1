@@ -580,7 +580,7 @@ footer{
         gap:16px;
         overflow-x:auto;
         padding:12px 20px 28px;
-        scroll-snap-type:x mandatory;
+        scroll-snap-type: none;
         -webkit-overflow-scrolling:touch;
         scrollbar-width:none;
         width:100%;
