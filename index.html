@@ -518,7 +518,9 @@ function mostrarServico(nome){
 
 
 
-    const destino = card.offsetTop - 730;
+   const destino = window.innerWidth <= 768
+    ? card.offsetTop - 600
+    : card.offsetTop - 730;
 
 window.scroll({
     top: destino,
