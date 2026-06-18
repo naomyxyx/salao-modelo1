@@ -1,0 +1,747 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<title>Rupi Salão</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<body>
+
+<div class="ladybug" id="ladybug">🐞</div>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <img src="fotos/icon.png" alt="Rupi">
+
+        <h1>Rupi</h1>
+
+        <p class="manifesto-rupi">
+            ✷  Cabelo, identidade e liberdade ✷
+            <br>
+                 Para celebrar quem você é 🏳️‍🌈
+
+        </p>
+
+        <a href="#" class="btn">
+            Agendar Horário
+        </a>
+
+    </div>
+
+</section>
+
+<section class="catalogo">
+
+<div class="categorias">
+
+    <span class="tag"
+onclick="mostrarServico('corte'); girarPara(0)"> Corte
+    </span>
+
+ <span class="tag"
+onclick="mostrarServico('coloracao'); girarPara(-120)">
+    Coloração
+</span>
+
+   <span class="tag"
+onclick="mostrarServico('tratamento'); girarPara(-240)">
+    Tratamento
+</span>
+
+   <span class="tag"
+onclick="mostrarServico('avaliacao'); girarPara(-60)">
+    Avaliação
+</span>
+
+</div>
+
+    <div class="portfolio3d">
+
+        <div class="carrossel3d" id="carrossel3d">
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/corte.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/corte3.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/corte4.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/corte5.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/corte6.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/foto1.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/foto2.jpg">
+            </figure>
+
+            <figure onclick="focarFoto(this)">
+                <img src="fotos/foto3.jpg">
+            </figure>
+
+             <figure onclick="focarFoto(this)">
+                <img src="fotos/foto4.jpg">
+            </figure>
+
+             <figure onclick="focarFoto(this)">
+                <img src="fotos/foto5.jpg">
+            </figure>
+
+             <figure onclick="focarFoto(this)">
+                <img src="fotos/foto6.jpg">
+            </figure>
+
+             <figure onclick="focarFoto(this)">
+                <img src="fotos/corte2.jpg">
+            </figure>
+        </div>
+
+      
+
+            <div class="slider-mobile">
+
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte2.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte3.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte4.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte5.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/corte6.jpg" alt="corte"></figure>
+
+</div>
+
+    </div>
+
+    <div id="galeria" class="galeria"></div>
+
+<div id="infoServico" class="card-servico"></div>
+</section>
+
+<section class="equipe">
+
+    <h2>Nossa Equipe</h2>
+
+    <div class="equipe-grid">
+
+        <div class="equipe-card">
+            <div class="equipe-foto"></div>
+            <h3>Bia</h3>
+            <p>Transformações com personalidade e um olhar criativo para cada cliente.</p>
+        </div>
+
+        <div class="equipe-card">
+            <div class="equipe-foto"></div>
+            <h3>Aline</h3>
+            <p>Avaliação para coloração e atendimento personalizado para encontrar a melhor proposta para cada cabelo.</p>
+        </div>
+
+        <div class="equipe-card">
+            <div class="equipe-foto"></div>
+            <h3>Bela</h3>
+            <p>Cortes, escovas e avaliação para coloração, valorizando a identidade de cada pessoa.</p>
+        </div>
+
+        <div class="equipe-card">
+            <div class="equipe-foto"></div>
+            <h3>Tami</h3>
+            <p>Cortes e escovas para quem busca praticidade, estilo e autenticidade.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="cta">
+
+
+    <h2> Venha nos visitar!</h2>
+
+     <img src="fotos/mapa.PNG" class="mapa-preview">
+
+    <a
+    href="https://maps.app.goo.gl/YUWaPCMHKHJSDaHN9"
+    target="_blank"
+    class="btn">
+
+    Abrir no Google Maps
+
+    </a>
+
+<div class="info-local">
+
+    <div class="item-info">
+        <strong> Endereço</strong>
+        <p>
+R. Sena Madureira, 729 - Vila Clementino<br>São Paulo - SP</p>
+    </div>
+
+    <div class="item-info">
+        <strong>🕒 Horário</strong>
+        <p>Terça a Sexta: 9h às 18h<br>Sábado: 9h às 16h</p>
+    </div>
+
+</div>
+
+   
+
+</section>
+
+</section>
+
+<footer>
+
+    © 2026 Rupi - Todos os direitos reservados
+
+</footer>
+
+<script>
+
+const carousel = document.querySelector('.carrossel3d');
+
+
+let moved = false;
+let isDragging = false;
+let startX = 0;
+let rotation = 0;
+
+
+let velocity = 0;
+let momentum;
+/* ---------- MOUSE ---------- */
+
+carousel.addEventListener('mousedown', (e) => {
+   isDragging = true;
+moved = false;
+startX = e.clientX;
+
+    carousel.style.cursor = 'grabbing';
+});
+
+window.addEventListener('mouseup', () => {
+
+    isDragging = false;
+
+    carousel.style.cursor = 'grab';
+
+    cancelAnimationFrame(momentum);
+
+    function inertia(){
+
+        velocity *= 0.95;
+
+        rotation += velocity;
+
+        carousel.style.transform =
+            `rotateY(${rotation}deg)`;
+
+        if(Math.abs(velocity) > 0.1){
+
+            momentum =
+            requestAnimationFrame(inertia);
+
+        }
+
+    }
+
+    inertia();
+
+});
+
+function girarPara(angulo){
+
+    cancelAnimationFrame(momentum);
+
+    velocity = 0;
+
+    const inicio = rotation;
+    const destino = angulo;
+
+    const duracao = 1200;
+
+    let startTime = null;
+
+    function animar(timestamp){
+
+        if(!startTime)
+            startTime = timestamp;
+
+        const progress =
+            Math.min((timestamp - startTime) / duracao, 1);
+
+        const ease =
+            1 - Math.pow(1 - progress, 3);
+
+        rotation =
+            inicio + (destino - inicio) * ease;
+
+        carousel.style.transform =
+            `rotateY(${rotation}deg)`;
+
+        if(progress < 1){
+
+            requestAnimationFrame(animar);
+
+        }
+
+    }
+
+    requestAnimationFrame(animar);
+
+}
+
+window.addEventListener('mousemove', (e) => {
+
+    if(!isDragging) return;
+
+    const moveX = e.clientX - startX;
+
+    velocity = moveX * 0.25;
+
+    rotation += velocity;
+
+    carousel.style.transform =
+        `rotateY(${rotation}deg)`;
+
+    startX = e.clientX;
+    moved = true;
+});
+
+/* ---------- TOUCH ---------- */
+
+carousel.addEventListener('touchstart', (e) => {
+
+    isDragging = true;
+    startX = e.touches[0].clientX;
+
+}, { passive: true });
+
+carousel.addEventListener('touchend', () => {
+
+    isDragging = false;
+
+    cancelAnimationFrame(momentum);
+
+    function inertia(){
+
+        velocity *= 0.9;
+
+        rotation += velocity;
+
+        carousel.style.transform =
+            `rotateY(${rotation}deg)`;
+
+        if(Math.abs(velocity) > 0.1){
+
+            momentum =
+            requestAnimationFrame(inertia);
+
+        }
+
+    }
+
+    inertia();
+
+});
+
+carousel.addEventListener('touchmove', (e) => {
+
+    if(!isDragging) return;
+
+    const moveX =
+    e.touches[0].clientX - startX;
+
+    velocity = moveX * 0.25;
+
+    rotation += velocity;
+
+    carousel.style.transform =
+        `rotateY(${rotation}deg)`;
+
+    startX = e.touches[0].clientX;
+
+}, { passive:true });
+
+
+
+const servicos = {
+
+    corte: `
+        <h3>Corte</h3>
+        <p>A partir de R$100</p>
+        <a href="#" class="btn-agendar-avaliacao">
+        Agendar
+    `,
+
+    avaliacao: `
+        <h3>Avaliação Gratuita</h3>
+      <a href="#" class="btn-agendar-avaliacao">
+        Agendar
+    </a>
+`,
+
+    coloracao: `
+        <h3>Coloração</h3>
+        <p>Consulta de valores pós agendamento</p>
+        <a href="#" class="btn-agendar-avaliacao">
+        Agendar
+    `,
+
+
+    tratamento: `
+        <h3>Tratamento</h3>
+        <p>Corte + Tratamento R$250</p>
+        <a href="#" class="btn-agendar-avaliacao">
+        Agendar
+    `,
+
+    escova: `
+        <h3>Escova</h3>
+        <p>A partir de R$ XX</p>
+    `
+};
+
+const galerias = {
+
+    corte: [
+        "fotos/corte.jpg",
+        "fotos/corte2.jpg",
+        "fotos/corte3.jpg",
+        "fotos/corte4.jpg",
+        "fotos/corte5.jpg",
+        "fotos/corte6.jpg"
+    ],
+
+    avaliacao: [
+       "fotos/foto4.jpg",
+    "fotos/corte2.jpg",
+    "fotos/corte3.jpg",
+    "fotos/corte4.jpg",
+    "fotos/corte5.jpg",
+    "fotos/corte6.jpg",
+    "fotos/foto1.jpg",
+     "fotos/corte.jpg",
+    "fotos/foto2.jpg",
+    "fotos/foto3.jpg",
+    "fotos/foto5.jpg",
+    "fotos/foto6.jpg"
+    ],
+
+    coloracao: [
+        "fotos/foto1.jpg",
+        "fotos/foto2.jpg",
+        "fotos/foto3.jpg",
+        "fotos/foto4.jpg",
+        "fotos/foto5.jpg",
+        "fotos/foto6.jpg"
+    ],
+
+    tratamento: [
+       "fotos/foto2.jpg",
+    
+    "fotos/corte3.jpg",
+    "fotos/corte4.jpg",
+    "fotos/corte5.jpg",
+     "fotos/corte2.jpg",
+    "fotos/corte6.jpg",
+    "fotos/foto1.jpg",
+    "fotos/foto3.jpg",
+    "fotos/foto5.jpg",
+    "fotos/foto6.jpg",
+    "fotos/foto4.jpg",
+     "fotos/corte.jpg",
+    ],
+
+    escova: [
+        "fotos/corte.jpg",
+        "fotos/corte3.jpg",
+        "fotos/corte5.jpg",
+        "fotos/corte6.jpg"
+    ]
+
+};
+
+function chamarAtencao(){
+
+    const tags = document.querySelectorAll('.tag');
+
+    tags.forEach((tag,index)=>{
+
+        setTimeout(()=>{
+
+            tag.style.animation =
+            'ondaCategorias .5s ease';
+
+            tag.addEventListener('animationend',()=>{
+                tag.style.animation='';
+            },{once:true});
+
+        },index*250);
+
+    });
+
+}
+
+setInterval(chamarAtencao,10000);
+
+function mostrarServico(nome){
+
+    const card =
+    document.getElementById('infoServico');
+
+    card.style.display = 'block';
+
+    card.innerHTML =
+    servicos[nome];
+
+
+
+    const destino = card.offsetTop - 730;
+
+window.scroll({
+    top: destino,
+    left: 0,
+    behavior: "smooth"
+});
+
+
+    const carrossel3d = document.getElementById('carrossel3d');
+    const gridGaleria = document.getElementById('grid-galeria');
+    const slider =
+    document.querySelector('.slider-mobile');
+
+
+    if(slider && galerias[nome]){
+
+    slider.innerHTML =
+    galerias[nome]
+    .map(src => `<figure onclick="focarFotoMobile(this)"><img src="${src}" alt="${nome}"></figure>`)
+    .join('');
+    }
+    const cards =
+    slider.querySelectorAll('figure');
+
+    cards.forEach((card,index)=>{
+
+        card.style.animation = 'none';
+
+        requestAnimationFrame(()=>{
+
+            card.style.animation =
+            `meiaLuaEntrada .9s cubic-bezier(0.22,1,0.36,1) ${index * 0.08}s both`
+
+        });
+
+    });
+
+}
+
+
+window.addEventListener('mouseleave', () => {
+    isDragging = false;
+});
+
+window.addEventListener('blur', () => {
+    isDragging = false;
+});
+
+document.addEventListener('selectstart', e => {
+    e.preventDefault();
+});
+
+function focarFoto(figure) {
+    const allFigures = document.querySelectorAll('.carrossel3d figure');
+    allFigures.forEach(f => f.style.filter = 'blur(2px)');
+    figure.style.filter = 'blur(0) brightness(1.1)';
+    figure.style.transform = figure.style.transform.replace('translateZ(400px)', 'translateZ(500px)');
+    
+    setTimeout(() => {
+        allFigures.forEach(f => f.style.filter = '');
+        figure.style.transform = figure.style.transform.replace('translateZ(500px)', 'translateZ(400px)');
+    }, 2000);
+}
+
+function focarFotoMobile(figure) {
+    const allFigures = document.querySelectorAll('.slider-mobile figure');
+    allFigures.forEach(f => f.style.filter = 'blur(2px)');
+    figure.style.filter = 'blur(0) brightness(1.1)';
+    figure.style.transform = 'scale(1.05)';
+    
+    setTimeout(() => {
+        allFigures.forEach(f => f.style.filter = '');
+        figure.style.transform = '';
+    }, 2000);
+}
+
+// Ladybug organic walking animation
+const ladybug = document.getElementById('ladybug');
+const destinations = [
+    { element: '.icon-wrapper', offset: { x: 0, y: 0 } },
+    { element: 'h1', offset: { x: 50, y: 0 } },
+    { element: '.btn', offset: { x: 30, y: 0 } },
+    { element: '.tag:nth-child(1)', offset: { x: 0, y: 0 } },
+    { element: '.tag:nth-child(2)', offset: { x: 0, y: 0 } },
+    { element: '.tag:nth-child(3)', offset: { x: 0, y: 0 } },
+    { element: '.preco-card:nth-child(1)', offset: { x: 0, y: 0 } },
+    { element: '.preco-card:nth-child(2)', offset: { x: 0, y: 0 } },
+    { element: '.preco-card:nth-child(3)', offset: { x: 0, y: 0 } }
+];
+
+let currentDestination = null;
+let isWalking = false;
+let walkInterval = null;
+
+function getRandomDestination() {
+    const validDestinations = destinations.filter(dest => {
+        const el = document.querySelector(dest.element);
+        return el && el.offsetParent !== null;
+    });
+    
+    if (validDestinations.length === 0) return null;
+    
+    return validDestinations[Math.floor(Math.random() * validDestinations.length)];
+}
+
+
+function walkToDestination(destination) {
+    if (!destination) return;
+    
+    const targetEl = document.querySelector(destination.element);
+    if (!targetEl) return;
+    
+    const rect = targetEl.getBoundingClientRect();
+    const targetX = rect.left + rect.width / 2 + destination.offset.x;
+    const targetY = rect.top + rect.height / 2 + destination.offset.y;
+    
+    // Start position (random edge)
+    const edge = Math.floor(Math.random() * 3);
+    let startX, startY;
+    
+    switch(edge) {
+        case 0: // left
+            startX = -20;
+            startY = Math.random() * window.innerHeight;
+            break;
+        case 1: // right
+            startX = window.innerWidth + 20;
+            startY = Math.random() * window.innerHeight;
+            break;
+        case 2: // top
+            startX = Math.random() * window.innerWidth;
+            startY = -20;
+            break;
+    }
+    
+    ladybug.style.opacity = '1';
+    ladybug.style.left = startX + 'px';
+    ladybug.style.top = startY + 'px';
+    
+    const duration = 25000 + Math.random() * 10000;
+    const startTime = Date.now();
+    
+    function animate() {
+        const elapsed = Date.now() - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        
+        // Easing function for natural movement
+        const easeProgress = progress < 0.5 
+            ? 2 * progress * progress 
+            : 1 - Math.pow(-2 * progress + 2, 2) / 2;
+        
+        const currentX = startX + (targetX - startX) * easeProgress;
+        const currentY = startY + (targetY - startY) * easeProgress;
+        
+        // Add subtle organic wobble
+        const wobble = Math.sin(elapsed / 200) * 2;
+        
+        ladybug.style.left = (currentX + wobble) + 'px';
+        ladybug.style.top = currentY + 'px';
+        
+        // Rotate towards direction (head points right by default in 🐞 emoji)
+        const angle = Math.atan2(targetY - startY, targetX - startX) * (180 / Math.PI) + 90;
+        ladybug.style.transform = `rotate(${angle}deg)`;
+        
+       if (progress < 1) {
+
+    if (progress < 1) {
+    requestAnimationFrame(animate);
+
+
+    } else {
+
+        requestAnimationFrame(animate);
+
+    }
+
+} else {
+            // Arrived at destination
+            isWalking = false;
+            setTimeout(() => {
+                ladybug.style.opacity = '0';
+                setTimeout(startLadybugWalk, 3000 + Math.random() * 5000);
+            }, 1000 + Math.random() * 2000);
+        }
+    }
+    
+    isWalking = true;
+    animate();
+}
+
+function startLadybugWalk() {
+    if (isWalking) return;
+    
+    const destination = getRandomDestination();
+    if (destination) {
+        walkToDestination(destination);
+    } else {
+        setTimeout(startLadybugWalk, 2000);
+    }
+}
+
+// Start ladybug after initial page load
+setTimeout(startLadybugWalk, 5000);
+
+let scrollTimer;
+
+window.addEventListener('scroll', () => {
+
+    ladybug.style.opacity = '0';
+
+    clearTimeout(scrollTimer);
+
+    scrollTimer = setTimeout(() => {
+
+        ladybug.style.opacity = '1';
+
+        startLadybugWalk();
+
+    }, 2500);
+
+});
+
+</script>
+
+</body>
+</html>
