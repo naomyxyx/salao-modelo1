@@ -521,19 +521,19 @@ function chamarAtencao(){
         setTimeout(()=>{
 
             tag.style.animation =
-            'ondaCategorias .3.5s ease';
+            'ondaCategorias .5s ease';
 
             tag.addEventListener('animationend',()=>{
                 tag.style.animation='';
             },{once:true});
 
-        },index*250);
+        },index*100);
 
     });
 
 }
 
-setInterval(chamarAtencao,10000);
+setInterval(chamarAtencao,5000);
 
 function mostrarServico(nome){
 
