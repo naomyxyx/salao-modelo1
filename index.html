@@ -134,11 +134,15 @@ onclick="mostrarServico('avaliacao'); girarPara(-60)">
             <div class="slider-mobile">
 
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/foto5.jpg" alt="corte"></figure>
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte2.jpg" alt="corte"></figure>
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte3.jpg" alt="corte"></figure>
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte4.jpg" alt="corte"></figure>
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte5.jpg" alt="corte"></figure>
     <figure onclick="focarFotoMobile(this)"><img src="fotos/corte6.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/foto1.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/foto2.jpg" alt="corte"></figure>
+    <figure onclick="focarFotoMobile(this)"><img src="fotos/foto3.jpg" alt="corte"></figure>
 
 </div>
 
@@ -456,10 +460,10 @@ const servicos = {
 const galerias = {
 
     corte: [
-        "fotos/corte.jpg",
+        "fotos/corte4.jpg",
         "fotos/corte2.jpg",
         "fotos/corte3.jpg",
-        "fotos/corte4.jpg",
+        "fotos/corte.jpg",
         "fotos/corte5.jpg",
         "fotos/corte6.jpg"
     ],
@@ -787,7 +791,7 @@ window.addEventListener('load',()=>{
         requestAnimationFrame(()=>{
 
             card.style.animation =
-            `meiaLuaEntrada .9s cubic-bezier(0.22,1,0.36,1) ${index * 0.08}s both`;
+            `meiaLuaEntrada .6s cubic-bezier(0.22,1,0.36,1) ${index * 0.9}s both`;
 
         });
 
