@@ -50,6 +50,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </section>
 
+
 <section class="catalogo">
 
 <div class="categorias">
@@ -521,13 +522,13 @@ function chamarAtencao(){
         setTimeout(()=>{
 
             tag.style.animation =
-            'ondaCategorias .5s ease';
+            'ondaCategorias .7s ease';
 
             tag.addEventListener('animationend',()=>{
                 tag.style.animation='';
             },{once:true});
 
-        },index*100);
+        },index*300);
 
     });
 
