@@ -773,6 +773,28 @@ window.addEventListener('scroll', () => {
 
 });
 
+/*fotos f5 */
+
+window.addEventListener('load',()=>{
+
+    const cards =
+    document.querySelectorAll('.slider-mobile figure');
+
+    cards.forEach((card,index)=>{
+
+        card.style.animation = 'none';
+
+        requestAnimationFrame(()=>{
+
+            card.style.animation =
+            `meiaLuaEntrada .9s cubic-bezier(0.22,1,0.36,1) ${index * 0.08}s both`;
+
+        });
+
+    });
+
+});
+
 </script>
 
 </body>
